@@ -5,9 +5,9 @@ import { spacing } from "@ui5/webcomponents-react-base";
 
 
 export function MyApp() {
-    const handleHeaderClick = () => {
+     const handleHeaderClick = () => {
         alert("Header clicked");
-      };
+       };
     //   const dataset = [
     //     {
     //       month: "January",
@@ -43,11 +43,11 @@ export function MyApp() {
         My root component
         <Card header={<CardHeader titleText="Card" interactive
         onClick={handleHeaderClick} />} style={{ width: "300px" }} ><Text style={spacing.sapUiContentPadding}>This is the content area of the Card</Text>
-        {/* <LineChart measures={[{ accessor: "data", label: "Stock Price" }]} dimensions={[{ accessor: "month" }]} />
+        {/* <LineChart measures={[{ accessor: "data", label: "Stock Price" }]} dimensions={[{ accessor: "month" }]} dataset={dataset} />
         <BarChart
          dimensions={[{ accessor: "month" }]}
-         measures={[{ accessor: "data", label: "Stock Price" }]} */}
-        {/* //  dataset={dataset}
+         measures={[{ accessor: "data", label: "Stock Price" }]} 
+           dataset={dataset}
 /> */}
 
         </Card>
